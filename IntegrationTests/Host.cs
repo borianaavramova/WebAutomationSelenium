@@ -15,6 +15,7 @@ namespace IntegrationTests
          static  Host()
         {
             Instance.Run("Blog", 60639);
+            //Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(() => new ChromeDriver())); //From Viara, that works for Chrome* 
             //About Chrome Browser : Instance.Run("Blog", 60634, w => w.WithRemoteWebDriver(BrowserFactory.Chrome));
             //RootUrl = Instance.Application.Browser.Url;
         }
